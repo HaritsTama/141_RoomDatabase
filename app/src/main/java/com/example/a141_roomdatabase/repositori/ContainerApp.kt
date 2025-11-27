@@ -18,6 +18,11 @@ class ContainerDataApp(private val context : Context):
 }
 
 class AplikasiSiswa : Application() {
+
+    /**
+     * AppContainer instance digunakan oleh kelas kelas lainya untuk
+     * mendapatkan dependensi
+     */
     lateinit var container: ContainerApp
     override fun onCreate() {
         super.onCreate()
